@@ -1,24 +1,22 @@
 import './Hero.css';
-import {Link} from "react-router"
+import {Link} from "react-router";
+
 const Hero = () => {
   return (
-    <div>
+    <div className="hero-container">
       <p className="main-text">
-        Architecting <span className='secondary-text'>Digital Artifacts</span>
+        KAREN <span className='secondary-text'>CASSANI</span>
       </p>
-      <p>
-        Full-stack developer specializing in building high-performance, visually
-        stunning web experiences that live at the intersection of design and
-        data.
+      <p className="description-text">
+        I am currently studying Computer science, I am passionate about software development, automatization, cybersecurity, and leveraging technology to solve complex problems and create innovative solutions. My interests also extend to areas like environmental sustainability and especially AI.
       </p>
-      <div className='brn-container'>
-        <button className='btn'> 
-            <Link to= "/Projects">View Projects</Link>
+      <div className='btn-container'>
+        <button className='btn btn-primary'> 
+            <Link to="/Projects">View Projects</Link>
         </button>
-        <button className='btn'> 
-            <Link to= "/Aboutme">About Me</Link>
+        <button className='btn btn-secondary'> 
+            <Link to="/ContactMe">Contact Me</Link>
         </button>
-        
       </div>
     </div>
   );
